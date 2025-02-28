@@ -1,0 +1,20 @@
+.bgimage {
+    background-repeat: no-repeat !important;
+    background-image: url('/ThinkstockPhotos-835271096(1)-Recovered-2880w.jpg') !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+    overflow: hidden;
+}
+
+
+
+  
+  .bgimage::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgb(39 48 41 / 0.3); 
+  }
+  
+
