@@ -43,7 +43,7 @@ function Choose() {
         </motion.h2>
 
       <motion.div
-       variants={fadeIn('down', 0.8)}
+       variants={fadeIn('up', 0.8)}
        initial='hidden' whileInView={'show'} viewport={{once:true, amount:0.4}}
       className="grid grid-cols-1 mx-auto md:grid-cols-3 md:gap-[15px]  gap-[30px]">
           {menu.map( (f, i) => {

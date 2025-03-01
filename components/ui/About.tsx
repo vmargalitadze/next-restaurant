@@ -32,7 +32,7 @@ function About() {
          variants={fadeIn('up', 0.4)}
          initial='hidden' whileInView={'show'} viewport={{once:true, amount:0.2}}
         className="">
-            <Image className='hidden xl:flex' src='/about/img.png' width={705} height={771 } alt='about-image' />
+            <Image className='flex' src='/about/img.png' width={705} height={771 } alt='about-image' />
         </motion.div>
     </section>
   )
