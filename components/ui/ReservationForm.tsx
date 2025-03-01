@@ -86,9 +86,9 @@ function ReservationForm() {
           name="fullName"
           render={({ field } : {field: ControllerRenderProps<z.infer<typeof bookingSchema >, 'fullName'  >  } ) => (
             <FormItem className='w-full text-white'>
-              <FormLabel>full Name</FormLabel>
+              <FormLabel>Full ame</FormLabel>
               <FormControl>
-                <Input placeholder="enter full name" {...field} />
+                <Input placeholder="Enter full name" {...field} />
               </FormControl>
             
               <FormMessage />
@@ -105,7 +105,7 @@ function ReservationForm() {
             <FormItem className='w-full text-white'>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input placeholder="enter email" {...field} />
+                <Input placeholder="Enter Email" {...field} />
               </FormControl>
             
               <FormMessage />
@@ -125,7 +125,7 @@ function ReservationForm() {
             <FormItem className='w-full text-white'>
               <FormLabel>Phone</FormLabel>
               <FormControl>
-                <Input placeholder="enter phone" {...field} />
+                <Input placeholder="Enter Phone" {...field} />
               </FormControl>
             
               <FormMessage />
@@ -181,7 +181,7 @@ function ReservationForm() {
           <PopoverTrigger asChild>
             <div className="flex h-[62px] items-center whitespace-nowrap border-white/10 border bg-white/5 px-6 py-2 text-base text-white shadow-sm ring-offset-background placeholder:text-white/80 focus:outline-none focus:ring-1 focus:ring-orange disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 w-full">
               <CalendarIcon className="mr-2 h-4 w-4" />
-              {field.value ? format(new Date(field.value), "PPP") : <span>Pick a Date</span>}
+              {field.value ? format(new Date(field.value), "PPP") : <span>Pick A Date</span>}
             </div>
           </PopoverTrigger>
           <PopoverContent className="w-auto ">
@@ -215,7 +215,7 @@ function ReservationForm() {
         <FormControl>
           <Select onValueChange={(value) => field.onChange(value)} value={field.value}>
             <SelectTrigger className="w-full">
-              <SelectValue placeholder="Select a time" />
+              <SelectValue placeholder="Select A time" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>

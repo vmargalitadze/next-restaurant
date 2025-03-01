@@ -30,8 +30,8 @@ function Hero() {
                      variants={fadeIn('down', 0.6)}
                      initial='hidden' whileInView={'show'} viewport={{once:true, amount:0.4}}
                     className="">
-                        <Button > <Link offset={-50} duration={500}
-                                className="hidden  xl:flex gap-x-12 text-white"
+                        <Button className=' p-8   max-w-[869px]'> <Link offset={-50} duration={500}
+                                className="flex gap-x-12 text-white"
                                 smooth={true} spy={true} to='reservation'> Book a table </Link></Button>
                     </motion.div>
                 </div>

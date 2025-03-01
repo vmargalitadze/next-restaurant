@@ -33,7 +33,7 @@ function Map() {
    variants={fadeIn('up', 0.2)}
    initial='hidden' whileInView={'show'} viewport={{once:false, amount:0.2}}
    className='relative  xl:after:to-white/20 xl:after:absolute xl:after:top-0 xl:after:z-20  xl:after:from-white xl:after:via-white/80   xl:after:h-[240px] xl:after:bg-gradient-to-b  xl:after:w-full' id='contact'>
-    <MapContainer zoom={ isMobile? 10 : 12 } zoomControl={false} className={`${isMobile? "h-[300px]" : "h-[900px]"  }  z-10`} center={[41.6460936, 41.6282782]}>
+    <MapContainer zoom={ isMobile? 10 : 12 } scrollWheelZoom={false} touchZoom={false} zoomControl={false} className={`${isMobile? "h-[300px]" : "h-[900px]"  }  z-10`} center={[41.6460936, 41.6282782]}>
       <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap </a> contributors' 
       url='https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png  '  />
 

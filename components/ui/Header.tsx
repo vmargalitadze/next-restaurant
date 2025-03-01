@@ -37,7 +37,7 @@ function Header() {
             <Nav linkStyles='capitalize' containerStyles='hidden  xl:flex gap-x-12 text-white' />
 
             <ScrollLink to='reservation' smooth={true}>
-                <Button variant='orange' size='sm' >Book a Table</Button>
+                <Button variant='orange' size='sm' >Book A Table</Button>
             </ScrollLink>
 
             <NavMobile iconStyles='text-3xl' containerStyles="xl:hidden z-70" linkStyles="uppercase" />
