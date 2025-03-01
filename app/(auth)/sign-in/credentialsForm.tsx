@@ -39,7 +39,8 @@ function CredentialsForm() {
     <div className='space-y-6'>
       <div>
         <Label htmlFor='email'>Email</Label>
-        <Input
+        <input
+        className='flex h-[62px] w-full  bg-gray-800 px-6 py-2 text-white  focus-visible:outline-none focus-visible:right-1 focus-visible:ring-orange disabled:cursor-not-allowed disabled:opacity-50'
           id='email'
           name='email'
           type='email'
@@ -50,7 +51,8 @@ function CredentialsForm() {
       </div>
       <div>
         <Label htmlFor='password'>Password</Label>
-        <Input
+        <input
+         className='flex h-[62px] w-full  bg-gray-800 px-6 py-2 text-white  focus-visible:outline-none focus-visible:right-1 focus-visible:ring-orange disabled:cursor-not-allowed disabled:opacity-50'
           id='password'
           name='password'
           type='password'

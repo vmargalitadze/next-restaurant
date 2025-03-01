@@ -8,8 +8,9 @@ import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from '@
 import Link from 'next/link'
 
 import DeleteDialog from '@/components/DeleteDialog'
-import { deleteBooking, getAllBooking } from '@/lib/actions'
+import { deleteBooking, getAllBooking, signOutUser } from '@/lib/actions'
 import { FaArrowRight } from 'react-icons/fa'
+import { Button } from '@/components/ui/button'
 
 export const metadata: Metadata = {
   title: 'Admin Orders',
@@ -38,6 +39,7 @@ async function Page({ searchParams }: { searchParams: Promise<{ page: string; qu
         </div>
       </div>
 
+
       {/* Orders Section */}
       <div className="container mx-auto px-4 py-10">
         <div className="flex justify-between items-center mb-6">
@@ -46,6 +48,14 @@ async function Page({ searchParams }: { searchParams: Promise<{ page: string; qu
         </div>
 
         {/* Orders Table */}
+      <form action={signOutUser} className='w-28 mb-16 justify-center mx-auto  '>
+              <Button
+                className='w-full py-4 px-2 h-4 justify-start'
+                variant="orange"
+              >
+                Sign Out
+              </Button>
+            </form>
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
           <Table className="w-full">
             <TableHeader className="bg-gray-200 text-gray-700">
