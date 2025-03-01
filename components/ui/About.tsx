@@ -12,7 +12,12 @@ function About() {
          variants={fadeIn('right', 0.2)}
          initial='hidden' whileInView={'show'} viewport={{once:true, amount:0.2}}
         className='xl:p-[135px]'>
-            <h1 className='mb-9'> Let&#39;s Talk About W&#39;Food </h1>
+            <h1 className='mb-9'> Let&#39;s Talk About  
+              <span className='text-[#F2994a] '>
+
+               W&#39;
+              </span>
+                 Food </h1>
             <p className='mb-8'>Mauris nam et ipsum ipsum in. 
                 Risus nullam in sit mi est justo at fringilla.
                  Consequat ac fringilla quis enim, sit ipsum. Laoreet eget metus morbi convallis gravida elementum facilisis.
@@ -21,8 +26,8 @@ function About() {
        
        </p>
 
-<Button>
-  <Link href='/us'> 
+<Button className='mb-9'>
+  <Link href='/us' > 
   
    Read More
   </Link>
