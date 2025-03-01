@@ -4,13 +4,7 @@ import Link from "next/link"
 import {IoIosArrowRoundForward} from 'react-icons/io'
 import {motion} from 'framer-motion'
 import {fadeIn} from '@/components/variants'
-import { Lobster } from 'next/font/google'
-const lobster = Lobster({
-	weight: ['400', ],
-    style: ['normal',],
-    subsets: ['latin'],
-    display: 'swap',
-})
+
 const menu = [
     {
       img:'/menu/photo-1600028068383-ea11a7a101f3.avif',
@@ -48,7 +42,7 @@ function Menu() {
          variants={fadeIn('left', 0.3)}
          initial='hidden' whileInView={'show'} viewport={{once:true, amount:0.2}}
         className="max-w-[570px]  mx-auto text-center">
-            <h2 className={`${lobster.className} text-white`} >Menu</h2>
+            <h2 className={` text-white`} >Menu</h2>
             <Link className="text-white justify-center flex  items-center mb-16" href='/menu' >View All <IoIosArrowRoundForward className="text-3xl "/> </Link>
         </motion.div>
 

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { auth } from '@/auth'
 import { redirect } from 'next/navigation'
 import React from 'react'
