@@ -5,7 +5,7 @@ import { Metadata } from 'next'
 
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from '@/components/ui/table'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+
 import DeleteDialog from '@/components/DeleteDialog'
 import { deleteBooking, getAllBooking } from '@/lib/actions'
 import { FaArrowRight } from 'react-icons/fa'
